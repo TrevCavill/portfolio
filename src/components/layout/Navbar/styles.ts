@@ -7,7 +7,7 @@ export const useStyles = makeStyles()((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
     width: "100%",
-    padding: theme.spacing(4, 8),
+    padding: `${theme.spacing(4)} 5vw`,
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.secondary.main,
     borderBottom: `3px solid ${theme.palette.secondary.main}`,
@@ -18,9 +18,11 @@ export const useStyles = makeStyles()((theme) => ({
     gap: theme.spacing(8),
   },
   link: {
+    color: theme.palette.secondary.main,
     textDecoration: "none",
     cursor: "pointer",
     fontWeight: 700,
+    fontSize: "1.2rem",
     "&:hover": {
       color: theme.palette.secondary.light,
     },
