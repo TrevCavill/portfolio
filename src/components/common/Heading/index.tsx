@@ -10,9 +10,11 @@ interface HeadingProps {
 const Heading: FC<HeadingProps> = ({ text }) => {
   const { classes } = useStyles();
   return (
-    <Typography variant="h2" className={classes.heading}>
-      {text}
-    </Typography>
+    <div className={classes.container}>
+      <Typography variant="h2" className={classes.heading}>
+        {text}
+      </Typography>
+    </div>
   );
 };
 

@@ -21,8 +21,8 @@ function App() {
         <AboutSection />
         <ServicesSection />
         <ContactSection />
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 }

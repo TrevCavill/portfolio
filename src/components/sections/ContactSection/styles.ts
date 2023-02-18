@@ -5,17 +5,32 @@ export const useStyles = makeStyles<void, "emailText">()(
     container: {
       display: "flex",
       height: "100vh",
+      [theme.breakpoints.down("sm")]: {
+        flexDirection: "column",
+        paddingTop: "10vh",
+        paddingBottom: theme.spacing(4),
+      },
     },
     contentLeft: {
       flex: 1,
       display: "grid",
       placeContent: "center",
+      [theme.breakpoints.down("sm")]: {
+        display: "block",
+        padding: theme.spacing(4),
+        flex: "unset",
+      },
     },
     description: {
       display: "flex",
       flexDirection: "column",
       gap: theme.spacing(16),
       width: 600,
+      [theme.breakpoints.down("sm")]: {
+        width: "100%",
+        gap: theme.spacing(8),
+        marginBottom: theme.spacing(8),
+      },
     },
     emailContainer: {
       display: "flex",
@@ -39,12 +54,19 @@ export const useStyles = makeStyles<void, "emailText">()(
       flex: 1,
       display: "grid",
       placeContent: "center",
+      [theme.breakpoints.down("sm")]: {
+        display: "block",
+      },
     },
     form: {
       width: 500,
       display: "flex",
       flexDirection: "column",
       gap: theme.spacing(4),
+      [theme.breakpoints.down("sm")]: {
+        width: `calc(100vw - ${theme.spacing(8)})`,
+        margin: "0 auto",
+      },
     },
     textField: {
       color: theme.palette.secondary.main,
@@ -69,6 +91,27 @@ export const useStyles = makeStyles<void, "emailText">()(
       "& .MuiOutlinedInput-notchedOutline": {
         color: theme.palette.secondary.main,
       },
+    },
+    submitButton: {
+      width: "50%",
+      color: theme.palette.primary.main,
+      "&:hover": {
+        backgroundColor: theme.palette.secondary.light,
+      },
+      [theme.breakpoints.down("sm")]: {
+        width: "100%",
+      },
+    },
+    messageSent: {
+      display: "flex",
+      [theme.breakpoints.down("sm")]: {
+        flexDirection: "column",
+        gap: theme.spacing(4),
+        alignItems: "center",
+      },
+    },
+    messageSentIcon: {
+      fontSize: "3rem",
     },
   })
 );

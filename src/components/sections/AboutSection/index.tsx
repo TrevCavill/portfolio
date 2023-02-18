@@ -14,11 +14,7 @@ const AboutSection = () => {
         <div className={classes.contentLeft}>
           <div className={classes.description}>
             <Heading text="About" />
-            <Typography
-              variant="body1"
-              className={classes.text}
-              style={{ fontSize: "1.3rem" }}
-            >
+            <Typography variant="body1" className={classes.text}>
               I am an experienced full-stack web developer born in New Zealand.
               My main area of expertise is React JS, but I have worked with a
               wide range of web technologies. In addition to being a web

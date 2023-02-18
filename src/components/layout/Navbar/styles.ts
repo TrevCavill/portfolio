@@ -12,7 +12,7 @@ export const useStyles = makeStyles()((theme) => ({
     color: theme.palette.secondary.main,
     borderBottom: `3px solid ${theme.palette.secondary.main}`,
   },
-  links: {
+  desktopLinks: {
     display: "flex",
     alignItems: "center",
     gap: theme.spacing(8),
@@ -20,11 +20,22 @@ export const useStyles = makeStyles()((theme) => ({
   link: {
     color: theme.palette.secondary.main,
     textDecoration: "none",
+    textTransform: "capitalize",
     cursor: "pointer",
     fontWeight: 700,
     fontSize: "1.2rem",
     "&:hover": {
       color: theme.palette.secondary.light,
     },
+  },
+  codeIcon: {
+    display: "flex",
+    alignItems: "center",
+  },
+  mobileLinks: {
+    background: theme.palette.primary.main,
+  },
+  mobileLinkIcon: {
+    color: theme.palette.secondary.main,
   },
 }));
