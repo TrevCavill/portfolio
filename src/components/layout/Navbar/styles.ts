@@ -11,6 +11,7 @@ export const useStyles = makeStyles()((theme) => ({
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.secondary.main,
     borderBottom: `3px solid ${theme.palette.secondary.main}`,
+    zIndex: 100,
   },
   desktopLinks: {
     display: "flex",
