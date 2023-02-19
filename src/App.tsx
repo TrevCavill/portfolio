@@ -1,4 +1,5 @@
 import Navbar from "components/layout/Navbar";
+import Content from "~/components/layout/Content";
 import HeroSection from "components/sections/HeroSection";
 import AboutSection from "components/sections/AboutSection";
 import ServicesSection from "components/sections/ServicesSection";
@@ -9,20 +10,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <main
-        style={{
-          height: "100vh",
-          overflowY: "scroll",
-          scrollBehavior: "smooth",
-          scrollSnapType: "y mandatory",
-        }}
-      >
+      <Content>
         <HeroSection />
         <AboutSection />
         <ServicesSection />
         <ContactSection />
         <Footer />
-      </main>
+      </Content>
     </>
   );
 }
