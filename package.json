@@ -7,6 +7,7 @@
     "start": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "deploy": "npm install && npm run build && firebase deploy",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
