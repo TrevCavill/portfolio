@@ -17,7 +17,7 @@ const Footer = () => {
         >
           <LinkedInIcon className={classes.socialLink} />
         </a>
-        <a href="https://gitlab.com/TrevCavill" target="_blank">
+        <a href="https://github.com/TrevCavill" target="_blank">
           <GitHubIcon className={classes.socialLink} />
         </a>
         <a href="https://www.instagram.com/trevcavill/" target="_blank">

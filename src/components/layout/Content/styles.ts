@@ -6,5 +6,10 @@ export const useStyles = makeStyles()((theme) => ({
     overflowY: "scroll",
     scrollBehavior: "smooth",
     scrollSnapType: "y mandatory",
+    [theme.breakpoints.down("sm")]: {
+      height: "100%",
+      minHeight: "100vh",
+      scrollSnapType: "none",
+    },
   },
 }));

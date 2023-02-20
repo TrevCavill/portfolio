@@ -7,6 +7,8 @@ export const useStyles = makeStyles()((theme) => ({
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
       paddingTop: "20vh",
+      height: "100%",
+      minHeight: "100vh",
     },
   },
   contentLeft: {
@@ -43,7 +45,7 @@ export const useStyles = makeStyles()((theme) => ({
     backgroundColor: theme.palette.primary.main,
     [theme.breakpoints.down("sm")]: {
       width: "100%",
-      height: "100vh",
+      marginTop: theme.spacing(8),
     },
   },
   profilePicture: {

@@ -11,6 +11,9 @@ export const useStyles = makeStyles()((theme) => ({
     scrollSnapAlign: "center",
     backgroundColor: theme.palette.primary.dark,
     color: "#ffffff",
+    [theme.breakpoints.up("sm")]: {
+      scrollSnapAlign: "none",
+    },
   },
   socials: {
     display: "flex",

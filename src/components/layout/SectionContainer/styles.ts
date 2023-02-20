@@ -20,6 +20,9 @@ export const useStyles = makeStyles<{ backgroundColor: string }>()(
       scrollSnapAlign: "center",
       backgroundColor: getBackgroundColor(theme, backgroundColor),
       color: getTextColor(theme, backgroundColor),
+      [theme.breakpoints.up("sm")]: {
+        scrollSnapAlign: "none",
+      },
     },
   })
 );

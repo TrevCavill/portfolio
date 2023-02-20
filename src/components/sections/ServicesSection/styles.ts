@@ -7,6 +7,10 @@ export const useStyles = makeStyles()((theme) => ({
     placeItems: "center",
     height: "100vh",
     paddingTop: theme.spacing(8),
+    [theme.breakpoints.down("sm")]: {
+      height: "100%",
+      minHeight: "100vh",
+    },
   },
   cards: {
     width: "100vw",

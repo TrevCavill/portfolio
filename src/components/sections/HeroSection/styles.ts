@@ -14,6 +14,11 @@ export const useStyles = makeStyles()((theme) => ({
     backgroundAttachment: "fixed",
     backgroundColor: theme.palette.primary.main,
     backgroundBlendMode: "overlay",
+    [theme.breakpoints.down("sm")]: {
+      height: "100%",
+      minHeight: "100vh",
+      backgroundImage: "none",
+    },
   },
   heading: {
     color: "#ffffff",

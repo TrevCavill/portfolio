@@ -8,7 +8,9 @@ export const useStyles = makeStyles<void, "emailText">()(
       [theme.breakpoints.down("sm")]: {
         flexDirection: "column",
         paddingTop: "10vh",
-        paddingBottom: theme.spacing(4),
+        paddingBottom: theme.spacing(16),
+        height: "100%",
+        minHeight: "100vh",
       },
     },
     contentLeft: {
